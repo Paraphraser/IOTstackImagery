@@ -10,7 +10,7 @@ The general structure is:
 
 ```
 container/
-└── container-hyphenated-description
+└── hyphenated-description
     ├── container-hyphenated-description.ext1
     ├── container-hyphenated-description.ext2
     ├── …
@@ -27,10 +27,9 @@ Where:
 Common extensions are:
 
 * `.xlsx` - Microsoft Excel - input component
-* `.pages` - Apple Pages - input component
+* `.pages` - Apple Pages - input component (good for colourful tables)
 * `.afdesign` - Affinity Designer - assembly, vector artwork & crop
 * `.pdf` - output from `.afdesign`
 * `.jpeg` and `.png` - rasterised results
 
-`rasterise.sh` calls a custom PDF-to-target-format renderer but the same job can be done in any application like Photoshop, Affinity Photo, GIMP, etc.
-
+`rasterise.sh` calls a custom PDF-to-target-format renderer but the same job can be done in any application like Photoshop, Affinity Photo, GIMP, etc. The script will provide hints as to resolution (always 72 dpi), scaling factor, and output format. As a rule of thumb, PNG is used to preserve transparency while JPEG is used to discard transparency.
