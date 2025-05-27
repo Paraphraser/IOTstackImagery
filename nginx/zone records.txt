@@ -1,0 +1,12 @@
+$ORIGIN your.home.arpa.
+
+pi1           IN  A      192.168.203.60
+pi2           IN  A      192.168.203.61
+
+nginx         IN  CNAME  pi1.your.home.arpa.
+nodered       IN  CNAME  pi1.your.home.arpa.
+esphome       IN  CNAME  pi1.your.home.arpa.
+pihole        IN  CNAME  pi1.your.home.arpa.
+grafana       IN  CNAME  pi1.your.home.arpa.
+gitea         IN  CNAME  pi1.your.home.arpa.
+
